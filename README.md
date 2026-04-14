@@ -1,4 +1,4 @@
-🔍` CI Checks & Pre-commit Workflow:`
+🔍CI Checks & Pre-commit Workflow:
 
 To maintain high code quality and consistency across the repository, we use pre-commit hooks and static analysis tools. Below is a breakdown of each check and how to work with them.
 
@@ -8,18 +8,23 @@ To maintain high code quality and consistency across the repository, we use pre-
 1. trailing-whitespace
 
 What it does:
+
 Removes unnecessary whitespace at the end of lines.
 
 Why we use it:
+
 Trailing whitespace creates noisy diffs and reduces readability.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 2. end-of-file-fixer
 
 What it does:
+
 Ensures files end with a single newline.
 
 Why we use it:
+
 Required by POSIX standards and prevents unnecessary diff changes.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -31,6 +36,7 @@ What it does:
 Detects unresolved merge conflict markers like:
 
 Why we use it:
+
 Prevents broken commits caused by unresolved conflicts.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
