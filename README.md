@@ -1,6 +1,7 @@
-🔍 CI Checks & Pre-commit Workflow:
+🔍` CI Checks & Pre-commit Workflow:`
 
 To maintain high code quality and consistency across the repository, we use pre-commit hooks and static analysis tools. Below is a breakdown of each check and how to work with them.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ✅ Enabled Checks
 
@@ -30,8 +31,8 @@ What it does:
 Detects unresolved merge conflict markers like:
 
 Why we use it:
-
 Prevents broken commits caused by unresolved conflicts.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 4. pyright
