@@ -1,11 +1,11 @@
-🔍CI Checks & Pre-commit Workflow:
+# 🔍CI Checks & Pre-commit Workflow:
 
 To maintain high code quality and consistency across the repository, we use pre-commit hooks and static analysis tools. Below is a breakdown of each check and how to work with them.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-✅ Enabled Checks
+# ✅ Enabled Checks
 
-1. trailing-whitespace
+## 1. trailing-whitespace
 
 What it does:
 
@@ -17,7 +17,7 @@ Trailing whitespace creates noisy diffs and reduces readability.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2. end-of-file-fixer
+## 2. end-of-file-fixer
 
 What it does:
 
@@ -29,7 +29,7 @@ Required by POSIX standards and prevents unnecessary diff changes.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3. check-merge-conflict
+## 3. check-merge-conflict
 
 What it does:
 
@@ -41,7 +41,7 @@ Prevents broken commits caused by unresolved conflicts.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-4. pyright
+## 4. pyright
 
 What it does:
 
@@ -55,7 +55,7 @@ Why we use it:
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-5. pylint
+## 5. pylint
 
 What it does:
 
@@ -68,20 +68,21 @@ Why we use it:
 * Detects common bugs
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-⚙️ Pre-commit Workflow
-1. Install pre-commit
+# ⚙️ Pre-commit Workflow
+
+## 1. Install pre-commit
 ```
 pip install pre-commit
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-2. Install git hooks
+## 2. Install git hooks
 ```
 pre-commit install
 ```
 This sets up hooks to run automatically before each commit.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-3. Run checks manually (recommended)
+## 3. Run checks manually (recommended)
 Run on all files:
 ```
 pre-commit run --all-files
@@ -89,7 +90,7 @@ Run on staged files only:
 pre-commit run
 ```
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-4. Fix issues
+## 4. Fix issues
 Some issues are auto-fixed (e.g., whitespace)
 Others (pyright, pylint) must be fixed manually
 After fixing:
@@ -100,7 +101,7 @@ git commit
 ```
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
-5. CI Enforcement:
+## 5. CI Enforcement:
 
 All checks run in CI as well.
 
@@ -110,7 +111,7 @@ Fix issues locally before merging
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-💡 Best Practices
+# 💡 Best Practices
 
 * Run checks before pushing changes
 * Add type hints to new Python code
