@@ -1,5 +1,10 @@
+"""
+Have method to calculate factorial of a number.
+"""
 def factorial( n ):
-
+    """
+    method to calculate factorial of a number
+    """
     result  =  1
 
     for i in range( 1 , n + 1 ):
@@ -11,6 +16,6 @@ def factorial( n ):
 
 if __name__  ==  "__main__" :
 
-    number  =  5
+    INPUT_NUMBER  =  5
 
-    print( "Factorial of" , number , "is" , factorial( number ) )
+    print( "Factorial of" , INPUT_NUMBER , "is" , factorial( INPUT_NUMBER ) )

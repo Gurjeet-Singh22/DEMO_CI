@@ -119,5 +119,3 @@ Fix issues locally before merging
 * Add type hints to new Python code
 * Keep commits clean and focused
 * Address lint issues early
-
-
